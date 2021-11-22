@@ -1,11 +1,11 @@
 <?php
 
-$serverName = "ELIEZER-LAPTOP\SQLEXPRESS";
-$connectionInfo = array( "Database"=>"DB_VENTAS", "UID"=>"php", "PWD"=>"123");
+$serverName = "ELIEZER";
+$connectionInfo = array( "Database"=>"DB_INVENTARIOS", "UID"=>"eliezer", "PWD"=>"bastardog");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
 if( $conn ) {
-     // echo "Conexión establecida.<br />";
+    //  echo "Conexión establecida.<br />";
 }else{
      echo "Conexión no se pudo establecer.<br />";
      die( print_r( sqlsrv_errors(), true));

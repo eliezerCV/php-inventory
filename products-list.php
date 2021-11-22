@@ -1,7 +1,11 @@
 <div class="container">
     <div class="header-table">
         <h3>Lista de productos</h3>
-        <a href="new-product.php">Nuevo Producto</a>
+        <div class="news">
+            <a href="new-product.php">Nuevo Producto</a>
+            <a href="new-product.php">Nuevo Proveedor</a>
+            <a href="new-product.php">Nueva Categoría</a>
+        </div>
     </div>
     <div class="table">
         <div class="table-header">
@@ -40,7 +44,8 @@
                             INNER JOIN SUPPLIERS S
                             ON P.idSupplier=S.supplierId
                             INNER JOIN CATEGORIES C
-                            ON P.idCategory=C.categoryId";
+                            ON P.idCategory=C.categoryId 
+                            ORDER BY productId DESC";
                 $params = array();
                 $options =  array( "Scrollable" => SQLSRV_CURSOR_KEYSET );
                 $stmt = sqlsrv_query( $conn, $sql , $params, $options );

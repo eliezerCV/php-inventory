@@ -27,6 +27,11 @@ body, h3, h2, h1 {
     display: flex;
     justify-content: space-between;
 }
+.news {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
 .header-table a {
     box-shadow: 0 0 5px 0 #ccc;
     text-decoration: none;
