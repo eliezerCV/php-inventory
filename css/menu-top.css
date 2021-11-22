@@ -1,0 +1,12 @@
+.menu-top {
+    width: 100%;
+    background-color: darkcyan;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-top a {
+    color: #f2f2f2;
+
+}

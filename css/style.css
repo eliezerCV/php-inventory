@@ -1,0 +1,150 @@
+@import "footer.css";
+@import "menu-top.css";
+
+body, h3, h2, h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*****TABLE****/
+.container {
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.table {
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.header-table {
+    width: 90%; 
+    margin: 0 auto;
+    color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+}
+.header-table a {
+    box-shadow: 0 0 5px 0 #ccc;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: darkcyan;
+    font-weight: 600;
+    border: none;
+    transition: all ease 0.3s;
+}
+.header-table a:hover {
+    border-radius: 20px;
+    background-color: darkcyan;
+    color: #ffffff;
+    cursor: pointer;
+}
+.table-header {
+    width: 100%;
+    background-color: darkcyan;
+    padding: 10px 0 10px 0;
+    border-radius: 10px 10px 0 0;
+    color: #f2f2f2;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.table-header, .body-elem {
+    display: flex;
+    justify-content: space-around;
+}
+.header-elem {
+    width: 100%;
+    text-align: center;
+}
+.header-elem > span, .body-elem > span {
+    text-align: center;
+    width: 100%;
+}
+
+.body-elem {
+    padding: 5px 0 5px 0;
+    transition: all ease 0.1s;
+}
+.body-elem:hover {
+    /* border: solid 1px darkgreen; */
+    background-color: rgb(129, 201, 201);
+    cursor: pointer;
+}
+.body-elem > .no-active {
+    color: tomato;
+    font-weight: 600;
+}
+.body-elem > .active {
+    font-weight: 600;
+    color: green;
+}
+.diff {
+    background-color: rgb(205, 231, 231);   
+}
+
+/**** FORM *****/
+.container-form {
+    width: 100%;
+    margin-top: 50px;
+}
+form {
+    border-radius: 0 0 10px 10px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px #ccc;
+    box-sizing: border-box;
+}
+.form-header {
+    border-radius: 10px 10px 0 0;
+    width: 40%;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: darkcyan;
+}
+.form-elem {
+    width: 100%;
+    font-size: 1.2rem;
+    
+    margin: 10px 0 10px 0;
+}
+select > option {
+    padding: 5px;
+}
+.form-elem input[type="text"], select {
+    font-size: 1rem;
+    width: 100%;
+    padding: 5px;
+    border: solid 1px darkcyan;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.form-elem input[type="submit"] {
+    width: 20%;
+    padding: 5px;
+    border: solid 1px darkcyan;
+    border-radius: 5px;
+    background-color: #fff;
+    color: darkcyan;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+.form-elem input[type="submit"]:hover {
+    border-radius: 20px;
+    background-color: darkcyan;
+    color: #ffffff;
+    cursor: pointer;
+}
+.save {
+    text-align: center;
+}
